@@ -1,86 +1,109 @@
-# Kamaraka Project Timeline
+# Fuzzy Logic Assignment Timeline
 
-Based on the assignment details provided, here’s a revised timeline with specific tasks and roles assigned to each group member, aligning with the requirements:
-
----
-
-### **Week 1: Problem Scoping (Dec 9 – Dec 15)**
-1. **Role 1: Team Lead**  
-   - Assign roles and ensure everyone understands the assignment requirements.
-   - Oversee problem selection and objective finalization.
-
-2. **Role 2: Problem Analyst**  
-   - Identify and document the real-life problem in detail (e.g., stock management challenges).
-   - Draft a detailed problem statement and objectives.
-
-3. **Role 3: Fuzzy Logic Planner**  
-   - Outline potential inputs, outputs, and objectives for the fuzzy logic system.
-   - Research Mamdani and Sugeno systems to determine which is more suitable.
-
-4. **Role 4: Tool Researcher**  
-   - Study the `skfuzzy` library in Python and share useful tutorials or resources with the team.
-   - Suggest coding structure and tools for the implementation.
+## Assignment Overview
+- **Topic**: Fuzzy Logic System for Stock Management in He & She Coffee Cafe Outlet
+- **Submission Date**: 16 January 2025 (12:00 noon)
+- **Team Members**: 4
 
 ---
 
-### **Weeks 2–3: System Design and Data Preparation (Dec 16 – Dec 29)**
+## Roles
+1. Team Lead: Ikram
+2. Problem Analyst: Afnan
+3. Fuzzy Logic Planner: Bakhtiar
+4. Tool Researcher: Yulun
 
-1. **Role 1: Team Lead**  
-   - Regularly track progress and organize team discussions.
-   - Assist in validating inputs, outputs, and fuzzification techniques.
+## Timeline with Roles, Tasks, and Checklist
 
-2. **Role 2: Problem Analyst**  
-   - Define the system’s inputs (e.g., "current stock levels") and outputs (e.g., "order quantity").
-   - Collaborate with the Tool Researcher to identify appropriate datasets for testing.
+### Week 1: Problem Scoping (Dec 9 – Dec 15)
+#### Tasks:
+1. **Problem Selection**
+   - Identify a real-life problem suitable for a fuzzy logic system.
+   - Define the problem and document objectives.
 
-3. **Role 3: Fuzzy Logic Planner**  
-   - Design the knowledge base and fuzzy rule set (e.g., "IF stock is low AND demand is high THEN order large quantity").
-   - Finalize fuzzification techniques and membership functions.
+2. **Role-Specific Assignments**:
+   - **Team Lead** : Assign roles, oversee problem selection, and ensure understanding of assignment requirements.
+   - **Problem Analyst**: Draft a detailed problem statement and objectives.
+   - **Fuzzy Logic Planner**: Outline potential inputs, outputs, and objectives.
+   - **Tool Researcher**: Research `skfuzzy` library and suggest tutorials/resources.
 
-4. **Role 4: Tool Researcher**  
-   - Assist in preparing and cleaning test datasets.
-   - Set up Python environments and verify that `skfuzzy` works as expected.
-
----
-
-### **Weeks 4–5: Implementation and Testing (Dec 30 – Jan 12)**
-
-1. **Role 1: Team Lead**  
-   - Organize weekly check-ins and ensure deadlines are met.
-   - Document progress to assist with the final report.
-
-2. **Role 2: Problem Analyst**  
-   - Verify the implementation of fuzzy rules against the defined problem.
-   - Ensure the system’s objectives are being met.
-
-3. **Role 3: Fuzzy Logic Planner**  
-   - Code the inference engine and perform defuzzification.
-   - Debug issues and optimize rule sets for accuracy.
-
-4. **Role 4: Tool Researcher**  
-   - Conduct test runs with various inputs.
-   - Analyze and record system behavior for inclusion in the report.
+#### Checklist:
+- [ ] Problem identified and approved by the team.
+- [ ] Objectives clearly defined and documented.
+- [ ] Initial understanding of `skfuzzy` library.
 
 ---
 
-### **Final Week: Presentation and Report (Jan 13 – Jan 15)**
+### Weeks 2–3: System Design and Data Preparation (Dec 16 – Dec 29)
+#### Tasks:
+1. **System Design**
+   - Define inputs (e.g., "current stock levels") and outputs (e.g., "order quantity").
+   - Develop fuzzy rule base.
 
-1. **Role 1: Team Lead**  
-   - Compile all parts of the report (problem, objectives, system design, and results).
-   - Ensure report formatting and submission guidelines are followed.
+2. **Data Preparation**
+   - Collect or simulate relevant data.
 
-2. **Role 2: Problem Analyst**  
-   - Record the presentation section on problem description and objectives.
-   - Assist in preparing slides or visuals.
+3. **Role-Specific Assignments**:
+   - **Team Lead**: Monitor progress and validate inputs/outputs.
+   - **Problem Analyst**: Define inputs and outputs, ensure clarity.
+   - **Fuzzy Logic Planner**: Design knowledge base, membership functions, and rules.
+   - **Tool Researcher**: Assist with data preparation and Python setup.
 
-3. **Role 3: Fuzzy Logic Planner**  
-   - Record the technical demonstration of the system, focusing on rules and system design.
-   - Provide test results for the presentation.
-
-4. **Role 4: Tool Researcher**  
-   - Ensure the Python implementation is packaged correctly for submission.
-   - Edit the presentation video and confirm it meets the 15-minute requirement.
+#### Checklist:
+- [ ] Inputs and outputs defined.
+- [ ] Fuzzy rule base developed.
+- [ ] Relevant data prepared or simulated.
+- [ ] Python environment set up.
 
 ---
 
-Would you like help with any specific part, such as designing fuzzy rules, using `skfuzzy`, or preparing for the presentation?
+### Weeks 4–5: Implementation and Testing (Dec 30 – Jan 12)
+#### Tasks:
+1. **Implementation**
+   - Develop and code the fuzzy logic system using `skfuzzy`.
+
+2. **Testing**
+   - Conduct test runs with various inputs and refine the system.
+
+3. **Role-Specific Assignments**:
+   - **Team Lead**: Organize weekly check-ins, document progress.
+   - **Problem Analyst**: Verify fuzzy rules align with objectives.
+   - **Fuzzy Logic Planner**: Implement inference engine and perform defuzzification.
+   - **Tool Researcher**: Conduct test runs, analyze results, and debug.
+
+#### Checklist:
+- [ ] Fuzzy logic system implemented and functional.
+- [ ] System tested with appropriate inputs.
+- [ ] Debugging and optimizations completed.
+
+---
+
+### Final Week: Presentation and Report (Jan 13 – Jan 15)
+#### Tasks:
+1. **Documentation**
+   - Write the final report (problem, objectives, system design, results).
+
+2. **Presentation**
+   - Record a 15-minute presentation including a system demonstration.
+
+3. **Role-Specific Assignments**:
+   - **Team Lead**: Compile report and ensure submission guidelines are followed.
+   - **Problem Analyst**: Record problem description and objectives.
+   - **Fuzzy Logic Planner**: Record system design and rules explanation.
+   - **Tool Researcher**: Ensure Python implementation is packaged and edit the presentation video.
+
+#### Checklist:
+- [ ] Report finalized and saved in PDF format.
+- [ ] 15-minute presentation recorded and finalized.
+- [ ] Program files and report zipped for submission.
+- [ ] All deliverables submitted before the deadline.
+
+---
+
+### Notes
+- **Submission Format**:
+  - Submit both the report (PDF) and program files (zipped).
+  - Share the video presentation link.
+
+- **Late Submission Penalty**:
+  - Marks deducted based on the number of days late.
