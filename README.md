@@ -1,5 +1,7 @@
 # Fuzzy Logic Assignment Timeline
 
+https://drive.google.com/drive/folders/1fU5YZAeU4ahA_cxxFQ0zcj8y1VGvFoA9?usp=sharing
+
 ## Assignment Overview
 - **Topic**: Fuzzy Logic System for Stock Management in He & She Coffee Cafe Outlet
 - **Submission Date**: 16 January 2025 (12:00 noon)
@@ -28,7 +30,7 @@
    - **Tool Researcher**: Research `skfuzzy` library and suggest tutorials/resources.
 
 #### Checklist:
-- [ ] Problem identified and approved by the team.
+- [X] Problem identified and approved by the team.
 - [ ] Objectives clearly defined and documented.
 - [ ] Initial understanding of `skfuzzy` library.
 
