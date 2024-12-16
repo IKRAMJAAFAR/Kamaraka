@@ -3,7 +3,7 @@
 https://drive.google.com/drive/folders/1fU5YZAeU4ahA_cxxFQ0zcj8y1VGvFoA9?usp=sharing
 
 ## Assignment Overview
-- **Topic**: Fuzzy Logic System for Stock Management in He & She Coffee Cafe Outlet
+- **Topic**: Fuzzy Logic System for Inventory Management in He & She Coffee Cafe Outlet
 - **Submission Date**: 16 January 2025 (12:00 noon)
 - **Team Members**: 4
 
