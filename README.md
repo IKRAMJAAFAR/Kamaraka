@@ -50,6 +50,9 @@ https://drive.google.com/drive/folders/1fU5YZAeU4ahA_cxxFQ0zcj8y1VGvFoA9?usp=sha
    - **Problem Analyst**: Define inputs and outputs, ensure clarity.
    - **Fuzzy Logic Planner**: Design knowledge base, membership functions, and rules.
    - **Tool Researcher**: Assist with data preparation and Python setup.
+      -  scikit-fuzzy main library：`https://pythonhosted.org/scikit-fuzzy/api/api.html`
+      -  Basic step to build up a fuzzy FrameWork
+      -  Define Input and Output Variables->Define Membership Functions->Create the Fuzzy Control System->Input Data and Compute Output
 
 #### Checklist:
 - [ ] Inputs and outputs defined.
