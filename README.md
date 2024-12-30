@@ -34,7 +34,7 @@ https://drive.google.com/drive/folders/1fU5YZAeU4ahA_cxxFQ0zcj8y1VGvFoA9?usp=sha
 
 #### Checklist:
 - [X] Problem identified and approved by the team.
-- [ ] Objectives clearly defined and documented.
+- [X] Objectives clearly defined and documented.
 - [ ] Initial understanding of `skfuzzy` library.
 
 ---
