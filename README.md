@@ -34,15 +34,15 @@ https://drive.google.com/drive/folders/1fU5YZAeU4ahA_cxxFQ0zcj8y1VGvFoA9?usp=sha
 
 #### Checklist:
 - [X] Problem identified and approved by the team.
-- [ ] Objectives clearly defined and documented.
-- [ ] Initial understanding of `skfuzzy` library.
+- [X] Objectives clearly defined and documented.
+- [X] Initial understanding of `skfuzzy` library.
 
 ---
 
 ### Weeks 2–3: System Design and Data Preparation (Dec 16 – Dec 29)
 #### Tasks:
 1. **System Design**
-   - Define inputs (e.g., "current stock levels") and outputs (e.g., "order quantity").
+   - Define inputs and outputs.
    - Develop fuzzy rule base.
 
 2. **Data Preparation**
@@ -56,7 +56,7 @@ https://drive.google.com/drive/folders/1fU5YZAeU4ahA_cxxFQ0zcj8y1VGvFoA9?usp=sha
 
 
 #### Checklist:
-- [ ] Inputs and outputs defined.
+- [X] Inputs and outputs defined.
 - [ ] Fuzzy rule base developed.
 - [ ] Relevant data prepared or simulated.
 - [ ] Python environment set up.
