@@ -59,7 +59,7 @@ https://drive.google.com/drive/folders/1fU5YZAeU4ahA_cxxFQ0zcj8y1VGvFoA9?usp=sha
 - [X] Inputs and outputs defined.
 - [ ] Fuzzy rule base developed.
 - [ ] Relevant data prepared or simulated.
-- [ ] Python environment set up.
+- [X] Python environment set up.
 
 ---
 
