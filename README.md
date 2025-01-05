@@ -57,8 +57,8 @@ https://drive.google.com/drive/folders/1fU5YZAeU4ahA_cxxFQ0zcj8y1VGvFoA9?usp=sha
 
 #### Checklist:
 - [X] Inputs and outputs defined.
-- [ ] Fuzzy rule base developed.
-- [ ] Relevant data prepared or simulated.
+- [X] Fuzzy rule base developed.
+- [ ] Relevant data prepared or simulated. - Team Lead
 - [ ] Python environment set up.
 
 ---
