@@ -129,14 +129,18 @@ class FLSInventoryManagement:
         urgency_agg.append(urgency_res)
 
         rule = invFuzz['High']
-        quantity_res = np.fmin(rule, self.quantity[0])
+        quantity_res = np.fmin(rule, self.quantity[1])
         urgency_res = np.fmin(rule, self.urgency[0])
+        quantity_agg.append(quantity_res)
+        quantity_res = np.fmin(rule, self.quantity[0])
         quantity_agg.append(quantity_res)
         urgency_agg.append(urgency_res)
 
         rule = daysFuzz['High']
-        quantity_res = np.fmin(rule, self.quantity[0])
+        quantity_res = np.fmin(rule, self.quantity[1])
         urgency_res = np.fmin(rule, self.urgency[0])
+        quantity_agg.append(quantity_res)
+        quantity_res = np.fmin(rule, self.quantity[0])
         quantity_agg.append(quantity_res)
         urgency_agg.append(urgency_res)
 
