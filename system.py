@@ -56,7 +56,7 @@ class FLSInventoryManagement:
 
         x = self.x_urgency
         urgent_zero = fuzz.trapmf(x, [0, 0, 5, 5])
-        urgent_low = fuzz.trapmf(x, [5, 5, 5, 30])
+        urgent_low = fuzz.trimf(x, [5, 5, 30])
         urgent_med = fuzz.trapmf(x, [5, 45, 55, 95])
         urgent_hig = fuzz.trapmf(x, [65, 95, 100, 100])
 
@@ -153,7 +153,7 @@ class FLSInventoryManagement:
         for ind, rule in enumerate(self.rule_list):
             self.inputsVar = rule[0]
             self.outputsVar = rule[1]
-            quan, urg = self.inference(invFuzz, daysFuzz, demandFuzz)
+            quan, urg = self.inference(ind, invFuzz, daysFuzz, demandFuzz)
 
             # Aggregate outputs using max operation
             quantity_agg = np.fmax(quantity_agg, quan)
@@ -161,7 +161,7 @@ class FLSInventoryManagement:
 
         return quantity_agg, urgency_agg
 
-    def inference(self, invFuzz=None, daysFuzz=None, demandFuzz=None):
+    def inference(self, ind:int, invFuzz=None, daysFuzz=None, demandFuzz=None):
         # Input states
         stateDemand = self.inputsVar[0]
         stateInv = self.inputsVar[1]
@@ -178,6 +178,7 @@ class FLSInventoryManagement:
 
         # Apply fuzzy AND to compute rule strength
         rule_strength = np.fmin(getDemandFuzz, np.fmin(getInvFuzz, getDaysFuzz))
+        print((ind, rule_strength))
 
         # Compute resulting fuzzy sets for outputs
         quantity_res = np.fmin(rule_strength, outputQuantity)
@@ -254,8 +255,7 @@ def plotting_subplot(axes, x, functionList, clr, labels, title, kind, symbol, in
     # Plot fuzzified values
     if fuzzfied_vals:
         for key, val in fuzzfied_vals.items():
-            y = [val] * len(x)
-            ax.plot(x, y, color='purple', linestyle='--', label=f"{key}: {val:.2f}")
+            ax.plot([min(x),max(x)], [val, val], color='purple', label=f"{key}: {val:.2f}")
 
     # Plot and shade aggregated curve
     if aggregated is not None:
@@ -274,7 +274,7 @@ def plotting_subplot(axes, x, functionList, clr, labels, title, kind, symbol, in
     ax.set_ylabel("Membership Degree")
 
     # Adjust legend
-    ax.legend(fontsize=8, loc='upper right', bbox_to_anchor=(1.1, 1))
+    # ax.legend(fontsize=8, loc='upper right', bbox_to_anchor=(1.1, 1))
 
 
 def get_valid_input(prompt, datatype):
@@ -313,7 +313,7 @@ symbol = [" RM in k",' Units', ' Days', ' Units', ' %']
 
 
 method_quantity = 'centroid'
-method_urgency = 'centroid'
+method_urgency = 'som'
 while(True):
     input_demand = get_valid_input("Insert the demand (RM in k): ", 'float')
     input_inventory = get_valid_input("Insert the inventory of quantity for a specified product (units): ", 'int')
@@ -327,7 +327,7 @@ while(True):
     quantity_agg, urgency_agg = system.get_aggregated(input_inventory, input_days, input_demand)
 
 
-    print("Inputs")
+    print("\nInputs")
     print("Demand (RM in k): ", input_demand)
     print("Inventory (Units): ", input_inventory)
     print("Days Before Expired (Days):", input_days)
