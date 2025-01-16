@@ -319,9 +319,9 @@ while(True):
     input_inventory = get_valid_input("Insert the inventory of quantity for a specified product (units): ", 'int')
     input_days = get_valid_input("Insert the days of that product before it expires (days): ", 'int')
 
-    fuzz_demand = system.interpert_membership_inputs(input_demand, "Demand")
-    fuzz_inv = system.interpert_membership_inputs(input_inventory, "Inventory")
-    fuzz_days = system.interpert_membership_inputs(input_days, "Days")
+    fuzz_demand = system.interpert_membership_inputs(np.clip(input_demand, min(system.x_demand), max(system.x_demand)), "Demand")
+    fuzz_inv = system.interpert_membership_inputs(np.clip(input_inventory, min(system.x_inventory), max(system.x_inventory)), "Inventory")
+    fuzz_days = system.interpert_membership_inputs(np.clip(input_days, min(system.x_days_before_expiry), max(system.x_days_before_expiry)), "Days")
 
     quantity_result, urgency_result = system.get_result(input_inventory, input_days, input_demand, method_quantity, method_urgency)
     quantity_agg, urgency_agg = system.get_aggregated(input_inventory, input_days, input_demand)
