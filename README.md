@@ -10,10 +10,9 @@ https://drive.google.com/drive/folders/1fU5YZAeU4ahA_cxxFQ0zcj8y1VGvFoA9?usp=sha
 ---
 
 ## Roles
-1. Team Lead: Ikram
-2. Problem Analyst: Afnan
-3. Fuzzy Logic Planner: Bakhtiar
-4. Tool Researcher: Yulun
+1. Team Lead & Programmer: Ikram
+2. Report & Presentation: Yulun
+3. Videos: Afnan & Bakhtiar
 
 ## Timeline with Roles, Tasks, and Checklist
 
